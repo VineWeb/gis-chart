@@ -104,6 +104,7 @@ export default function useMapbox(container: string = "" /* 容器id */) {
 
   const addSource = (json: any /* 接收的JSON数据 */) => {
     try {
+      if (!map) return
       const sourceId = "sourceId";
       const areaId = "area-id";
       const hasSource = map.getSource(sourceId);
@@ -207,6 +208,7 @@ export default function useMapbox(container: string = "" /* 容器id */) {
   const addLabelSource = (json: any /* 接收的JSON数据 */) => {
     const geoJson = createdPointFeatureCollectionByCityGeojson(json)
     const sourceId = "label_id";
+    if (!map) return
     const hasSource = map.getSource(sourceId);
     const hasLayer = map.getLayer(sourceId);
     if (hasLayer) map.removeLayer(sourceId);

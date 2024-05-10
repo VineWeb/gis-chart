@@ -1,7 +1,13 @@
 import useMapbox from '@/hooks/useMapbox.ts';
+import useGetData from '@/hooks/useGetData.ts';
 import './index.scss'
+import { requestChinaData } from '@/config'
 function Home () {
-  useMapbox('container');
+  const { addSource } = useMapbox('container');
+  const chinaJson = useGetData(requestChinaData);
+  if (chinaJson) {
+    addSource(chinaJson)
+  }
   return (
     <>
       首页

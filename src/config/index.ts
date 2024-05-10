@@ -1,3 +1,5 @@
+
+import axios from 'axios';
 import stamen from '@/assets/config/stamen.png';
 import tdtLight from '@/assets/config/tdtLight.png';
 import tdtSatellite from '@/assets/config/tdtSatellite.png';
@@ -147,3 +149,8 @@ export const MAP_OPTIONS  = [
         }
     }
 ];
+export const requestChinaData = () => {
+    return axios.get(`/json/china.json`).then(data => data.data);
+};
+
+
