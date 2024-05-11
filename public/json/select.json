@@ -1,0 +1,17 @@
+[
+  {
+          "id": 1,
+          "name": "景区名称",
+          "attribute": "name"
+  },
+  {
+          "id": 2,
+          "name": "地区",
+          "attribute": "provinceName"
+  },
+  {
+          "id": 3,
+          "name": "评定年份",
+          "attribute": "year"
+  }
+]
