@@ -4,8 +4,8 @@ import * as turf from "@turf/turf";
 import _ from "lodash";
 import "mapbox-gl/dist/mapbox-gl.css";
 import mapboxgl from "mapbox-gl";
-
 import { useEffect, useRef, useState } from "react";
+import './index.scss'
 
 const customMapStyle = {
   version: 8,
@@ -70,7 +70,7 @@ export default function useMapbox(container: string = "" /* 容器id */) {
     const mapInstance = new mapboxgl.Map({
       container: container || mapContainer!,
       center: [116.39747, 39.908823], // 天安门
-      zoom: 4, // starting zoom 地图初始的拉伸比例
+      zoom: 2, // starting zoom 地图初始的拉伸比例
       pitch: 0, // 地图的角度，不写默认是0，取值是0-85度，一般在3D中使用
       bearing: 0, // 地图的初始方向，值是北的逆时针度数，默认是0，即是正北
       antialias: true, // 抗锯齿，通过false关闭提升性能
@@ -85,7 +85,7 @@ export default function useMapbox(container: string = "" /* 容器id */) {
         addLayerConfig(mapInstance);
         (window as any)["mapInstance"] = map;
       });
-      mapInstance.setPadding({top: 90, bottom: 50, left: 250, right: 530})
+      mapInstance.setPadding({top: 90, bottom: 50, left: 250, right: 30})
       // map.on('zoom', () => {
       //     const zoom = map.getZoom();
       //     console.log('zoom:___', zoom);
@@ -120,9 +120,17 @@ export default function useMapbox(container: string = "" /* 容器id */) {
       );
       const levelKey: TLevelKey = _.get(json, "features[0].properties[level]");
       const zoom = zoomLevel[levelKey];
+      const handleJson = _.cloneDeep(json)
+      const features = handleJson.features.map((item: any) => {
+        return {
+          ...item,
+          id: item.properties.adcode
+        }
+      })
+      handleJson.features = features
       map.addSource(sourceId, {
         type: "geojson",
-        data: json,
+        data: handleJson,
       });
       map.addLayer({
         id: areaId,
@@ -133,10 +141,15 @@ export default function useMapbox(container: string = "" /* 容器id */) {
           "fill-color": [
             "case",
             ["!", ["has", "color"]], // 检查 "color" 是否为空
-            "#a9c6ba", // 如果 "color" 为空，返回空字符串
+            "#e71b24", // 如果 "color" 为空，返回空字符串
             ["get", "color"],
           ],
-          "fill-opacity": 0.66,
+          "fill-opacity": [
+            'case',
+            ['boolean', ['feature-state', 'hover'], false],
+            0.94,
+            0.49,
+          ]
         },
       });
       map.addLayer({
@@ -145,10 +158,11 @@ export default function useMapbox(container: string = "" /* 容器id */) {
         source: sourceId,
         layout: {},
         paint: {
-          "line-color": "#f6f6f5",
+          "line-color": "#d3c1b0",
           "line-width": 2,
         },
       });
+      mapMouseEvent(map)
       map.flyTo({
         center: centerCoordinates,
         essential: true,
@@ -161,6 +175,9 @@ export default function useMapbox(container: string = "" /* 容器id */) {
       addLabelSource(json)
     }
   };
+
+
+
   const addLineSource = (json: any /* 接收的JSON数据 */) => {
     try {
       const sourceId = "sourceId";
@@ -250,6 +267,54 @@ export default function useMapbox(container: string = "" /* 容器id */) {
     map.setCenter(coordinates);
     map.setZoom(zoom);
   };
+
+
+  function mapMouseEvent(map: any) {
+    const sourceId = "sourceId";
+    const areaId = "area-id";
+    let hoveredPolygonId: null = null
+    const popup = new mapboxgl.Popup({
+      closeButton: false,
+      closeOnClick: false
+    });
+    map.on('mousemove', areaId, (e: any ) => {
+      map.getCanvas().style.cursor = 'pointer';
+      const coordinates = e.features[0].properties.center
+      const html = `
+      <div class="popup">
+        <p>adcode: ${e.features[0].properties.adcode}</p>
+        <p>name: ${e.features[0].properties.name}</p>
+        <p>level: ${e.features[0].properties.level}</p>
+      </div>`
+      popup.setLngLat(JSON.parse(coordinates)).setHTML(html).addTo(map);
+        if (e.features.length > 0) {
+            if (hoveredPolygonId !== null) {
+                map.setFeatureState(
+                    { source: sourceId, id: hoveredPolygonId },
+                    { hover: false }
+                );
+            }
+            hoveredPolygonId = e.features[0].id;
+            map.setFeatureState(
+                { source: sourceId, id: hoveredPolygonId },
+                { hover: true }
+            );
+        }
+    });
+
+    map.on('mouseleave', areaId, () => {  
+      map.getCanvas().style.cursor = '';
+      popup.remove();
+      if (hoveredPolygonId !== null) {
+          map.setFeatureState(
+              { source: sourceId, id: hoveredPolygonId },
+              { hover: false }
+          );
+      }
+      hoveredPolygonId = null;
+    })
+  }
+
   return {
     map,
     mapContainer,
