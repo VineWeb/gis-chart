@@ -1,13 +1,14 @@
 
-import { useEffect, useState } from 'react';
+import { useCallback, useEffect, useState } from 'react';
 export default function useGetData<T>(fn: () => Promise<T>): T | undefined {
-  const [data, setDate] = useState<T| undefined>()
+  const [data, setData] = useState<T| undefined>()
+  const stableFn = useCallback(fn, []);
   useEffect(() => {
     async function getData() {
-      const res = await fn()
-      setDate(res)
+      const res = await stableFn()
+      setData(res)
     }
     getData()
-  }, [fn])
+  }, [stableFn])
   return data
 }

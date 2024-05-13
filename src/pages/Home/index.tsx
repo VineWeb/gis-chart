@@ -5,13 +5,14 @@ import { requestChinaData } from '@/config'
 function Home () {
   const { addSource } = useMapbox('container');
   const chinaJson = useGetData(requestChinaData);
+
   if (chinaJson) {
     addSource(chinaJson)
   }
   return (
     <>
       首页
-      <div id='container' className='map'></div>
+      <div id='container'className='map'></div>
     </>
   )
 }

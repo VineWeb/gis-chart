@@ -1,17 +1,22 @@
-[
-  {
-          "id": 1,
-          "name": "景区名称",
-          "attribute": "name"
-  },
-  {
-          "id": 2,
-          "name": "地区",
-          "attribute": "provinceName"
-  },
-  {
-          "id": 3,
-          "name": "评定年份",
-          "attribute": "year"
-  }
-]
+{
+"data": [
+    {
+            "id": 1,
+            "name": "景区名称",
+            "attribute": "name",
+            "width": 200
+    },
+    {
+            "id": 2,
+            "name": "地区",
+            "attribute": "provinceName",
+            "width": 200
+    },
+    {
+            "id": 3,
+            "name": "评定年份",
+            "attribute": "year",
+            "width": 200
+    }
+  ]
+}

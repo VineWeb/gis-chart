@@ -152,5 +152,11 @@ export const MAP_OPTIONS  = [
 export const requestChinaData = () => {
     return axios.get(`/json/china.json`).then(data => data.data);
 };
+export const getColumns = () => {
+    return axios.get(`/json/select.json`).then(data => data.data);
+};
+export const getDataSource = () => {
+    return axios.get(`/json/5a.json`).then(data => data.data);
+};
 
 
