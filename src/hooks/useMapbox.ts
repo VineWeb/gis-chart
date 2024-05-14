@@ -14,7 +14,7 @@ const customMapStyle = {
   layers: [],
 };
 const zoomLevel = {
-  province: 3,
+  province: 3.5,
   city: 6,
   district: 7.5,
 };
@@ -70,7 +70,7 @@ export default function useMapbox(container: string = "" /* 容器id */) {
     const mapInstance = new mapboxgl.Map({
       container: container || mapContainer!,
       center: [116.39747, 39.908823], // 天安门
-      zoom: 2, // starting zoom 地图初始的拉伸比例
+      zoom: 3, // starting zoom 地图初始的拉伸比例
       pitch: 0, // 地图的角度，不写默认是0，取值是0-85度，一般在3D中使用
       bearing: 0, // 地图的初始方向，值是北的逆时针度数，默认是0，即是正北
       antialias: true, // 抗锯齿，通过false关闭提升性能
@@ -85,9 +85,9 @@ export default function useMapbox(container: string = "" /* 容器id */) {
         addLayerConfig(mapInstance);
         (window as any)["mapInstance"] = map;
       });
-      mapInstance.setPadding({top: 90, bottom: 50, left: 250, right: 30})
-      // map.on('zoom', () => {
-      //     const zoom = map.getZoom();
+      mapInstance.setPadding({top: 200, bottom: 0, left: 250, right: 30})
+      // mapInstance.on('zoom', () => {
+      //     const zoom = mapInstance.getZoom();
       //     console.log('zoom:___', zoom);
       // });
     } catch (error) {
@@ -273,20 +273,20 @@ export default function useMapbox(container: string = "" /* 容器id */) {
     const sourceId = "sourceId";
     const areaId = "area-id";
     let hoveredPolygonId: null = null
-    const popup = new mapboxgl.Popup({
-      closeButton: false,
-      closeOnClick: false
-    });
+    // const popup = new mapboxgl.Popup({
+    //   closeButton: false,
+    //   closeOnClick: false
+    // });
     map.on('mousemove', areaId, (e: any ) => {
-      map.getCanvas().style.cursor = 'pointer';
-      const coordinates = e.features[0].properties.center
-      const html = `
-      <div class="popup">
-        <p>adcode: ${e.features[0].properties.adcode}</p>
-        <p>name: ${e.features[0].properties.name}</p>
-        <p>level: ${e.features[0].properties.level}</p>
-      </div>`
-      popup.setLngLat(JSON.parse(coordinates)).setHTML(html).addTo(map);
+      // map.getCanvas().style.cursor = 'pointer';
+      // const coordinates = e.features[0].properties.center
+      // const html = `
+      // <div class="popup">
+      //   <p>adcode: ${e.features[0].properties.adcode}</p>
+      //   <p>name: ${e.features[0].properties.name}</p>
+      //   <p>level: ${e.features[0].properties.level}</p>
+      // </div>`
+      // popup.setLngLat(JSON.parse(coordinates)).setHTML(html).addTo(map);
         if (e.features.length > 0) {
             if (hoveredPolygonId !== null) {
                 map.setFeatureState(
@@ -303,8 +303,8 @@ export default function useMapbox(container: string = "" /* 容器id */) {
     });
 
     map.on('mouseleave', areaId, () => {  
-      map.getCanvas().style.cursor = '';
-      popup.remove();
+      // map.getCanvas().style.cursor = '';
+      // popup.remove();
       if (hoveredPolygonId !== null) {
           map.setFeatureState(
               { source: sourceId, id: hoveredPolygonId },
