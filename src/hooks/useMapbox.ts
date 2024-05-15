@@ -141,13 +141,13 @@ export default function useMapbox(container: string = "" /* 容器id */) {
           "fill-color": [
             "case",
             ["!", ["has", "color"]], // 检查 "color" 是否为空
-            "#e71b24", // 如果 "color" 为空，返回空字符串
+            "#fae0bf", // 如果 "color" 为空，返回空字符串
             ["get", "color"],
           ],
           "fill-opacity": [
             'case',
             ['boolean', ['feature-state', 'hover'], false],
-            0.94,
+            0.67,
             0.49,
           ]
         },
@@ -175,8 +175,6 @@ export default function useMapbox(container: string = "" /* 容器id */) {
       addLabelSource(json)
     }
   };
-
-
 
   const addLineSource = (json: any /* 接收的JSON数据 */) => {
     try {
@@ -315,6 +313,31 @@ export default function useMapbox(container: string = "" /* 容器id */) {
     })
   }
 
+
+  function addMarkers (list: any[]) {
+    list.forEach(function(location) {
+      if (location.lng && location.lat) {
+          const el = document.createElement('div');
+          el.className = 'outer-circle';
+          const children = document.createElement('div');
+          children.className = 'inner-circle';
+          el.appendChild(children)
+          const marker = new mapboxgl.Marker(el)
+              .setLngLat([location.lng, location.lat])
+              .addTo(map);
+          el.addEventListener('mouseenter', () => {
+            const popup = new mapboxgl.Popup({ offset: 25, closeButton: false, closeOnClick: false })
+                .setLngLat([location.lng, location.lat])
+                .setHTML(`${location.provinceName}<br><strong>${location.name}</strong>`)
+                .addTo(map);
+            el.addEventListener('mouseleave', () => {
+                popup.remove();
+            });
+          });
+      }
+  });
+  }
+
   return {
     map,
     mapContainer,
@@ -322,5 +345,6 @@ export default function useMapbox(container: string = "" /* 容器id */) {
     addLineSource,
     addLabelSource,
     flyToCenter,
+    addMarkers
   };
 }
