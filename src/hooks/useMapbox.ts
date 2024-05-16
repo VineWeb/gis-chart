@@ -338,6 +338,30 @@ export default function useMapbox(container: string = "" /* 容器id */) {
   });
   }
 
+  function addMarkersPopup (list: any[]) {
+    list.forEach(function(location, index) {
+      if (location.lng && location.lat) {
+          const el = document.createElement('div');
+          el.className = 'outer-circle';
+          const children = document.createElement('div');
+          children.className = 'inner-circle';
+          el.appendChild(children)
+          const textEl = document.createElement('div');
+          textEl.className = 'text-el';
+          textEl.innerHTML = `<div>${location.name}</div>`
+          el.appendChild(textEl)
+          try {
+            new mapboxgl.Marker(el)
+            .setLngLat([location.lng, location.lat])
+            .addTo(map);
+          } catch (error) {
+            console.log(error)
+          }
+         
+      }
+  });
+  }
+
   return {
     map,
     mapContainer,
@@ -345,6 +369,7 @@ export default function useMapbox(container: string = "" /* 容器id */) {
     addLineSource,
     addLabelSource,
     flyToCenter,
-    addMarkers
+    addMarkers,
+    addMarkersPopup
   };
 }

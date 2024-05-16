@@ -122,7 +122,7 @@ function Tourism () {
       </Flex>
       <Table onRow={(record) => { return {
         onClick: () => onCell(record) 
-      }}} style={{margin: '0 20px'}} pagination={{showTotal: (total) => `总共: ${total} 条`}} dataSource={dataSource} columns={columns} />
+      }}} style={{margin: '0'}} pagination={{showTotal: (total) => `总共: ${total} 条`}} dataSource={dataSource} columns={columns} />
     </>
   )
 }

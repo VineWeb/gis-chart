@@ -18,7 +18,6 @@ function Home () {
   }, [data])
   return (
     <>
-      首页
       <div id='container'className='map'></div>
     </>
   )

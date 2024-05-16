@@ -1,41 +1,5 @@
 .map {
-  width: auto;
-  margin: 0 200px;
-  height: 1000px;
-}
-
-.outer-circle {
-  width: 20px;
-  height: 20px;
-  display: flex;
-  justify-content: center;
-  align-items: center;
-}
-
-.outer-circle::before {
-  content: '';
-  position: absolute;
   width: 100%;
+  padding: 0 20px;
   height: 100%;
-  border-radius: 50%;
-  background-color: pink;
-  animation: ripple 2s infinite;
-}
-
-.inner-circle {
-  width: 10px;
-  height: 10px;
-  background-color: red;
-  border-radius: 50%;
-}
-
-@keyframes ripple {
-  0% {
-      transform: scale(0.8);
-      opacity: 1;
-  }
-  100% {
-      transform: scale(2);
-      opacity: 0;
-  }
 }
