@@ -15,7 +15,7 @@ const customMapStyle = {
 };
 const zoomLevel = {
   province: 3.5,
-  city: 6,
+  city: 5.5,
   district: 7.5,
 };
 type TLevelKey = 'province' | 'city' | 'district'
@@ -83,7 +83,7 @@ export default function useMapbox(container: string = "" /* 容器id */) {
       mapInstance.on("style.load", () => {
         // 天地图底图加载
         addLayerConfig(mapInstance);
-        (window as any)["mapInstance"] = map;
+        (window as any)["mapInstance"] = mapInstance;
       });
       mapInstance.setPadding({top: 200, bottom: 0, left: 250, right: 30})
       // mapInstance.on('zoom', () => {
@@ -102,14 +102,15 @@ export default function useMapbox(container: string = "" /* 容器id */) {
     }
   }, []);
 
-  const addSource = (json: any /* 接收的JSON数据 */) => {
+  const addSource = (json: any, source_id = 'source_id', layer_id = 'layer_id') => {
     try {
       if (!map) return
-      const sourceId = "sourceId";
-      const areaId = "area-id";
+      const sourceId = source_id;
+      const layerId = layer_id;
       const hasSource = map.getSource(sourceId);
+
       if (hasSource) {
-        map.removeLayer(areaId);
+        map.removeLayer(layerId);
         map.removeLayer(sourceId);
         map.removeSource(sourceId);
       }
@@ -133,7 +134,7 @@ export default function useMapbox(container: string = "" /* 容器id */) {
         data: handleJson,
       });
       map.addLayer({
-        id: areaId,
+        id: layerId,
         type: "fill",
         source: sourceId,
         layout: {},
@@ -176,15 +177,59 @@ export default function useMapbox(container: string = "" /* 容器id */) {
     }
   };
 
-  const addLineSource = (json: any /* 接收的JSON数据 */) => {
+  const addJsonSource = (json: any, source_id = 'source_json_id', layer_id = 'layer_json_id') => {
     try {
-      const sourceId = "sourceId";
-      const areaId = "area-id";
+      if (!map) return
+      const sourceId = source_id;
+      const layerId = layer_id;
       const hasSource = map.getSource(sourceId);
       if (hasSource) {
-        map.removeLayer(areaId);
-        map.removeLayer(sourceId);
-        map.removeSource(sourceId);
+        hasSource.setData(json)
+      } else {
+        const handleJson = _.cloneDeep(json)
+        const features = handleJson.features.map((item: any) => {
+          return {
+            ...item,
+            id: item.properties.adcode
+          }
+        })
+        handleJson.features = features
+        map.addSource(sourceId, {
+          type: "geojson",
+          data: handleJson,
+        });
+        map.addLayer({
+          id: layerId,
+          type: "fill",
+          source: sourceId,
+          layout: {},
+          paint: {
+            "fill-color": [
+              "case",
+              ["!", ["has", "color"]], // 检查 "color" 是否为空
+              // "#fae0bf", // 如果 "color" 为空，返回空字符串
+              "#194cee", // 如果 "color" 为空，返回空字符串
+              ["get", "color"],
+            ],
+            "fill-opacity": [
+              'case',
+              ['boolean', ['feature-state', 'hover'], false],
+              0.67,
+              0.49,
+            ]
+          },
+        });
+        map.addLayer({
+          id: sourceId,
+          type: "line",
+          source: sourceId,
+          layout: {},
+          paint: {
+            "line-color": "#d3c1b0",
+            "line-width": 2,
+          },
+        });
+        mapMouseEvent(map)
       }
       const len = Math.floor((json.features.length - 1) / 2);
       const centerCoordinates = _.get(
@@ -193,20 +238,6 @@ export default function useMapbox(container: string = "" /* 容器id */) {
       );
       const levelKey: TLevelKey = _.get(json, "features[0].properties[level]");
       const zoom = zoomLevel[levelKey];
-      map.addSource(sourceId, {
-        type: "geojson",
-        data: json,
-      });
-      map.addLayer({
-        id: sourceId,
-        type: "line",
-        source: sourceId,
-        layout: {},
-        paint: {
-          "line-color": "#f6f6f5",
-          "line-width": 2,
-        },
-      });
       map.flyTo({
         center: centerCoordinates,
         essential: true,
@@ -214,11 +245,13 @@ export default function useMapbox(container: string = "" /* 容器id */) {
       map.setCenter(centerCoordinates);
       map.setZoom(zoom);
     } catch (error) {
-      console.error('addSource error')
+      console.error('addJsonSource error')
     } finally {
       addLabelSource(json)
     }
   };
+
+
 
   const addLabelSource = (json: any /* 接收的JSON数据 */) => {
     const geoJson = createdPointFeatureCollectionByCityGeojson(json)
@@ -359,17 +392,23 @@ export default function useMapbox(container: string = "" /* 容器id */) {
           }
          
       }
-  });
+    });
   }
+
+  function getLayers() {
+    return map.getStyle().layers;
+  }
+
 
   return {
     map,
     mapContainer,
     addSource,
-    addLineSource,
+    addJsonSource,
     addLabelSource,
     flyToCenter,
     addMarkers,
-    addMarkersPopup
+    addMarkersPopup,
+    getLayers
   };
 }

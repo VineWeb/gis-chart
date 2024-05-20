@@ -1,6 +1,6 @@
 import useMapbox from '@/hooks/useMapbox.ts';
 import useGetData from '@/hooks/useGetData.ts';
-import { getGuangdongJson, getGuangdongSource } from '@/config'
+import { getGuangdongJson, getGuangdongSource } from '@/config/http'
 import { useEffect } from 'react';
 function Home () {
   const { map, addSource, addMarkersPopup } = useMapbox('container');

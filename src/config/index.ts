@@ -1,5 +1,15 @@
-
-import axios from 'axios';
+import * as httpAxios from './http'
+export const {
+    requestChinaData,
+    getGuangdongJson,
+    requestProvinceJson,
+    requestCityJson,
+    requestTownJson,
+    getColumns,
+    getDataSource,
+    getGuangdongSource,
+    getQingyuanSource
+} = httpAxios
 import stamen from '@/assets/config/stamen.png';
 import tdtLight from '@/assets/config/tdtLight.png';
 import tdtSatellite from '@/assets/config/tdtSatellite.png';
@@ -149,26 +159,13 @@ export const MAP_OPTIONS  = [
         }
     }
 ];
-export const requestChinaData = () => {
-    return axios.get(`/json/china.json`).then(data => data.data);
-};
-export const getGuangdongJson = () => {
-    return axios.get(`/json/province/440000.json`).then(data => data.data);
-};
 
-export const getColumns = () => {
-    return axios.get(`/json/select.json`).then(data => data.data);
-};
-export const getDataSource = () => {
-    return axios.get(`/json/5a.json`).then(data => data.data);
-};
+export const SOURCE_ID = 'SOURCE_ID'
+export const LAYER_ID = 'LAYER_ID'
 
-export const getGuangdongSource = () => {
-    return axios.get(`/json/gd.json`).then(data => data.data);
-};
-export const getQingyuanSource = () => {
-    return axios.get(`/json/qingyuan.json`).then(data => data.data);
-};
+
+
+
 
 
 
