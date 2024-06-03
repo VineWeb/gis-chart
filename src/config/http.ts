@@ -29,3 +29,8 @@ export const getGuangdongSource = () => {
 export const getQingyuanSource = () => {
   return axios.get(`/json/qingyuan.json`).then(data => data.data);
 };
+
+
+export const getGuangzhouYuea = () => {
+  return axios.get(`/json/yuea.json`).then(data => data.data);
+};

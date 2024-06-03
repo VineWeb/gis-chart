@@ -1,0 +1,998 @@
+{
+  "data": [
+    {
+      "create_time": "2024年5月27日",
+      "person_lowest_price": 10700,
+      "person_highest_price": 11776,
+      "unit_lowest_price": 16000,
+      "unit_highest_price": 27104
+    },
+    {
+      "create_time": "2024年4月25日",
+      "person_lowest_price": 10200,
+      "person_highest_price": 11448,
+      "unit_lowest_price": 28100,
+      "unit_highest_price": 31038
+    },
+    {
+      "create_time": "2024年3月25日",
+      "person_lowest_price": 10000,
+      "person_highest_price": 11747,
+      "unit_lowest_price": 26100,
+      "unit_highest_price": 27922
+    },
+    {
+      "create_time": "2024年2月26日",
+      "person_lowest_price": 10000,
+      "person_highest_price": 12963,
+      "unit_lowest_price": 21800,
+      "unit_highest_price": 23325
+    },
+    {
+      "create_time": "2024年1月25日",
+      "person_lowest_price": 11400,
+      "person_highest_price": 14944,
+      "unit_lowest_price": 18100,
+      "unit_highest_price": 19287
+    },
+    {
+      "create_time": "2023年12月25日",
+      "person_lowest_price": 15000,
+      "person_highest_price": 16120,
+      "unit_lowest_price": 15000,
+      "unit_highest_price": 16227
+    },
+    {
+      "create_time": "2023年11月27日",
+      "person_lowest_price": 13500,
+      "person_highest_price": 14688,
+      "unit_lowest_price": 13000,
+      "unit_highest_price": 14662
+    },
+    {
+      "create_time": "2023年10月25日",
+      "person_lowest_price": 12000,
+      "person_highest_price": 13366,
+      "unit_lowest_price": 11800,
+      "unit_highest_price": 13657
+    },
+    {
+      "create_time": "2023年9月25日",
+      "person_lowest_price": 10500,
+      "person_highest_price": 12101,
+      "unit_lowest_price": 11100,
+      "unit_highest_price": 13421
+    },
+    {
+      "create_time": "2023年8月25日",
+      "person_lowest_price": 10000,
+      "person_highest_price": 12599,
+      "unit_lowest_price": 10000,
+      "unit_highest_price": 14093
+    },
+    {
+      "create_time": "2023年7月25日",
+      "person_lowest_price": 10000,
+      "person_highest_price": 19591,
+      "unit_lowest_price": 10000,
+      "unit_highest_price": 19111
+    },
+    {
+      "create_time": "2023年6月25日",
+      "person_lowest_price": 21800,
+      "person_highest_price": 23263,
+      "unit_lowest_price": 10000,
+      "unit_highest_price": 29652
+    },
+    {
+      "create_time": "2023年5月25日",
+      "person_lowest_price": 19800,
+      "person_highest_price": 20629,
+      "unit_lowest_price": 29500,
+      "unit_highest_price": 32452
+    },
+    {
+      "create_time": "2023年4月25日",
+      "person_lowest_price": 17100,
+      "person_highest_price": 18074,
+      "unit_lowest_price": 28900,
+      "unit_highest_price": 30477
+    },
+    {
+      "create_time": "2023年3月27日",
+      "person_lowest_price": 15000,
+      "person_highest_price": 15902,
+      "unit_lowest_price": 26600,
+      "unit_highest_price": 27809
+    },
+    {
+      "create_time": "2023年2月27日",
+      "person_lowest_price": 13500,
+      "person_highest_price": 14356,
+      "unit_lowest_price": 23500,
+      "unit_highest_price": 24904
+    },
+    {
+      "create_time": "2023年1月28日",
+      "person_lowest_price": 12500,
+      "person_highest_price": 13330,
+      "unit_lowest_price": 21000,
+      "unit_highest_price": 22919
+    },
+    {
+      "create_time": "2022年12月26日",
+      "person_lowest_price": 11900,
+      "person_highest_price": 12826,
+      "unit_lowest_price": 18600,
+      "unit_highest_price": 21577
+    },
+    {
+      "create_time": "2022年11月25日",
+      "person_lowest_price": 11000,
+      "person_highest_price": 12808,
+      "unit_lowest_price": 18500,
+      "unit_highest_price": 20747
+    },
+    {
+      "create_time": "2022年10月25日",
+      "person_lowest_price": 10000,
+      "person_highest_price": 17636,
+      "unit_lowest_price": 18600,
+      "unit_highest_price": 21608
+    },
+    {
+      "create_time": "2022年9月26日",
+      "person_lowest_price": 17000,
+      "person_highest_price": 18616,
+      "unit_lowest_price": 18600,
+      "unit_highest_price": 20595
+    },
+    {
+      "create_time": "2022年8月25日",
+      "person_lowest_price": 17300,
+      "person_highest_price": 18593,
+      "unit_lowest_price": 16900,
+      "unit_highest_price": 20372
+    },
+    {
+      "create_time": "2022年7月25日",
+      "person_lowest_price": 17000,
+      "person_highest_price": 18329,
+      "unit_lowest_price": 15000,
+      "unit_highest_price": 20381
+    },
+    {
+      "create_time": "2022年6月27日",
+      "person_lowest_price": 16600,
+      "person_highest_price": 18311,
+      "unit_lowest_price": 10000,
+      "unit_highest_price": 32871
+    },
+    {
+      "create_time": "2022年5月25日",
+      "person_lowest_price": 16500,
+      "person_highest_price": 17555,
+      "unit_lowest_price": 32000,
+      "unit_highest_price": 40992
+    },
+    {
+      "create_time": "2022年4月25日",
+      "person_lowest_price": 15200,
+      "person_highest_price": 16221,
+      "unit_lowest_price": 38500,
+      "unit_highest_price": 40464
+    },
+    {
+      "create_time": "2022年3月25日",
+      "person_lowest_price": 13900,
+      "person_highest_price": 15392,
+      "unit_lowest_price": 35700,
+      "unit_highest_price": 37760
+    },
+    {
+      "create_time": "2022年2月25日",
+      "person_lowest_price": 12800,
+      "person_highest_price": 17105,
+      "unit_lowest_price": 33500,
+      "unit_highest_price": 35970
+    },
+    {
+      "create_time": "2022年1月25日",
+      "person_lowest_price": 15000,
+      "person_highest_price": 19692,
+      "unit_lowest_price": 31000,
+      "unit_highest_price": 32618
+    },
+    {
+      "create_time": "2021年12月27日",
+      "person_lowest_price": 18800,
+      "person_highest_price": 21543,
+      "unit_lowest_price": 28000,
+      "unit_highest_price": 30775
+    },
+    {
+      "create_time": "2021年11月25日",
+      "person_lowest_price": 20000,
+      "person_highest_price": 21557,
+      "unit_lowest_price": 25900,
+      "unit_highest_price": 28535
+    },
+    {
+      "create_time": "2021年10月25日",
+      "person_lowest_price": 20000,
+      "person_highest_price": 21524,
+      "unit_lowest_price": 24800,
+      "unit_highest_price": 28819
+    },
+    {
+      "create_time": "2021年9月26日",
+      "person_lowest_price": 20000,
+      "person_highest_price": 21615,
+      "unit_lowest_price": 25000,
+      "unit_highest_price": 29955
+    },
+    {
+      "create_time": "2021年8月25日",
+      "person_lowest_price": 20000,
+      "person_highest_price": 22687,
+      "unit_lowest_price": 28000,
+      "unit_highest_price": 37841
+    },
+    {
+      "create_time": "2021年7月26日",
+      "person_lowest_price": 21000,
+      "person_highest_price": 24914,
+      "unit_lowest_price": 37800,
+      "unit_highest_price": 49138
+    },
+    {
+      "create_time": "2021年6月25日",
+      "person_lowest_price": 22800,
+      "person_highest_price": 27542,
+      "unit_lowest_price": 45000,
+      "unit_highest_price": 62128
+    },
+    {
+      "create_time": "2021年5月25日",
+      "person_lowest_price": 26500,
+      "person_highest_price": 29423,
+      "unit_lowest_price": 60900,
+      "unit_highest_price": 63757
+    },
+    {
+      "create_time": "2021年4月25日",
+      "person_lowest_price": 25900,
+      "person_highest_price": 27142,
+      "unit_lowest_price": 53900,
+      "unit_highest_price": 56205
+    },
+    {
+      "create_time": "2021年3月25日",
+      "person_lowest_price": 23500,
+      "person_highest_price": 24826,
+      "unit_lowest_price": 46200,
+      "unit_highest_price": 48350
+    },
+    {
+      "create_time": "2021年2月25日",
+      "person_lowest_price": 21000,
+      "person_highest_price": 22494,
+      "unit_lowest_price": 39800,
+      "unit_highest_price": 41983
+    },
+    {
+      "create_time": "2021年1月25日",
+      "person_lowest_price": 20000,
+      "person_highest_price": 21960,
+      "unit_lowest_price": 34800,
+      "unit_highest_price": 39309
+    },
+    {
+      "create_time": "2020年12月25日",
+      "person_lowest_price": 19700,
+      "person_highest_price": 21711,
+      "unit_lowest_price": 37600,
+      "unit_highest_price": 40356
+    },
+    {
+      "create_time": "2020年11月25日",
+      "person_lowest_price": 16300,
+      "person_highest_price": 18217,
+      "unit_lowest_price": 29400,
+      "unit_highest_price": 31520
+    },
+    {
+      "create_time": "2020年10月26日",
+      "person_lowest_price": 13800,
+      "person_highest_price": 20025,
+      "unit_lowest_price": 23500,
+      "unit_highest_price": 25366
+    },
+    {
+      "create_time": "2020年9月25日",
+      "person_lowest_price": 18500,
+      "person_highest_price": 26837,
+      "unit_lowest_price": 18200,
+      "unit_highest_price": 19354
+    },
+    {
+      "create_time": "2020年8月25日",
+      "person_lowest_price": 25800,
+      "person_highest_price": 30005,
+      "unit_lowest_price": 14600,
+      "unit_highest_price": 15555
+    },
+    {
+      "create_time": "2020年7月27日",
+      "person_lowest_price": 24800,
+      "person_highest_price": 26011,
+      "unit_lowest_price": 12000,
+      "unit_highest_price": 13418
+    },
+    {
+      "create_time": "2020年6月28日",
+      "person_lowest_price": 20900,
+      "person_highest_price": 21929,
+      "unit_lowest_price": 10000,
+      "unit_highest_price": 12446
+    },
+    {
+      "create_time": "2020年5月25日",
+      "person_lowest_price": 17800,
+      "person_highest_price": 18918,
+      "unit_lowest_price": 10000,
+      "unit_highest_price": 12581
+    },
+    {
+      "create_time": "2020年4月26日",
+      "person_lowest_price": 15200,
+      "person_highest_price": 17820,
+      "unit_lowest_price": 10000,
+      "unit_highest_price": 15306
+    },
+    {
+      "create_time": "2020年3月25日",
+      "person_lowest_price": 17200,
+      "person_highest_price": 18495,
+      "unit_lowest_price": 14800,
+      "unit_highest_price": 16474
+    },
+    {
+      "create_time": "2020年2月25日",
+      "person_lowest_price": 16000,
+      "person_highest_price": 17086,
+      "unit_lowest_price": 13000,
+      "unit_highest_price": 14612
+    },
+    {
+      "create_time": "2020年2月3日",
+      "person_lowest_price": 14800,
+      "person_highest_price": 16050,
+      "unit_lowest_price": 11800,
+      "unit_highest_price": 13461
+    },
+    {
+      "create_time": "2019年12月25日",
+      "person_lowest_price": 13800,
+      "person_highest_price": 15461,
+      "unit_lowest_price": 10000,
+      "unit_highest_price": 12411
+    },
+    {
+      "create_time": "2019年11月25日",
+      "person_lowest_price": 13200,
+      "person_highest_price": 15917,
+      "unit_lowest_price": 10000,
+      "unit_highest_price": 12835
+    },
+    {
+      "create_time": "2019年10月25日",
+      "person_lowest_price": 10000,
+      "person_highest_price": 20306,
+      "unit_lowest_price": 10000,
+      "unit_highest_price": 13567
+    },
+    {
+      "create_time": "2019年9月26日",
+      "person_lowest_price": 20200,
+      "person_highest_price": 24164,
+      "unit_lowest_price": 10000,
+      "unit_highest_price": 17071
+    },
+    {
+      "create_time": "2019年8月26日",
+      "person_lowest_price": 21800,
+      "person_highest_price": 23779,
+      "unit_lowest_price": 14500,
+      "unit_highest_price": 18542
+    },
+    {
+      "create_time": "2019年7月25日",
+      "person_lowest_price": 18800,
+      "person_highest_price": 22047,
+      "unit_lowest_price": 12100,
+      "unit_highest_price": 18842
+    },
+    {
+      "create_time": "2019年6月25日",
+      "person_lowest_price": 14100,
+      "person_highest_price": 28966,
+      "unit_lowest_price": 10000,
+      "unit_highest_price": 32803
+    },
+    {
+      "create_time": "2019年5月27日",
+      "person_lowest_price": 40000,
+      "person_highest_price": 42846,
+      "unit_lowest_price": 40100,
+      "unit_highest_price": 59223
+    },
+    {
+      "create_time": "2019年4月25日",
+      "person_lowest_price": 38600,
+      "person_highest_price": 40395,
+      "unit_lowest_price": 55000,
+      "unit_highest_price": 59376
+    },
+    {
+      "create_time": "2019年3月25日",
+      "person_lowest_price": 36000,
+      "person_highest_price": 37953,
+      "unit_lowest_price": 52100,
+      "unit_highest_price": 55791
+    },
+    {
+      "create_time": "2019年2月25日",
+      "person_lowest_price": 33000,
+      "person_highest_price": 36240,
+      "unit_lowest_price": 47800,
+      "unit_highest_price": 52206
+    },
+    {
+      "create_time": "2019年1月25日",
+      "person_lowest_price": 33900,
+      "person_highest_price": 39196,
+      "unit_lowest_price": 46000,
+      "unit_highest_price": 51488
+    },
+    {
+      "create_time": "2018年12月25日",
+      "person_lowest_price": 37000,
+      "person_highest_price": 40985,
+      "unit_lowest_price": 42300,
+      "unit_highest_price": 46032
+    },
+    {
+      "create_time": "2018年11月26日",
+      "person_lowest_price": 36800,
+      "person_highest_price": 39585,
+      "unit_lowest_price": 32300,
+      "unit_highest_price": 35922
+    },
+    {
+      "create_time": "2018年10月25日",
+      "person_lowest_price": 33100,
+      "person_highest_price": 35434,
+      "unit_lowest_price": 24200,
+      "unit_highest_price": 26597
+    },
+    {
+      "create_time": "2018年9月25日",
+      "person_lowest_price": 29700,
+      "person_highest_price": 32205,
+      "unit_lowest_price": 17200,
+      "unit_highest_price": 22696
+    },
+    {
+      "create_time": "2018年8月27日",
+      "person_lowest_price": 25500,
+      "person_highest_price": 31654,
+      "unit_lowest_price": 12000,
+      "unit_highest_price": 25880
+    },
+    {
+      "create_time": "2018年7月25日",
+      "person_lowest_price": 12100,
+      "person_highest_price": 56152,
+      "unit_lowest_price": 10000,
+      "unit_highest_price": 70079
+    },
+    {
+      "create_time": "2018年6月25日",
+      "person_lowest_price": 52000,
+      "person_highest_price": 57283,
+      "unit_lowest_price": 62800,
+      "unit_highest_price": 77611
+    },
+    {
+      "create_time": "2018年5月25日",
+      "person_lowest_price": 41300,
+      "person_highest_price": 44225,
+      "unit_lowest_price": 62000,
+      "unit_highest_price": 68498
+    },
+    {
+      "create_time": "2018年4月25日",
+      "person_lowest_price": 32100,
+      "person_highest_price": 34455,
+      "unit_lowest_price": 51000,
+      "unit_highest_price": 56158
+    },
+    {
+      "create_time": "2018年3月26日",
+      "person_lowest_price": 25300,
+      "person_highest_price": 26939,
+      "unit_lowest_price": 39100,
+      "unit_highest_price": 41653
+    },
+    {
+      "create_time": "2018年2月26日",
+      "person_lowest_price": 22800,
+      "person_highest_price": 24560,
+      "unit_lowest_price": 32200,
+      "unit_highest_price": 34718
+    },
+    {
+      "create_time": "2018年1月25日",
+      "person_lowest_price": 21000,
+      "person_highest_price": 25213,
+      "unit_lowest_price": 28000,
+      "unit_highest_price": 30832
+    },
+    {
+      "create_time": "2017年12月25日",
+      "person_lowest_price": 18000,
+      "person_highest_price": 32312,
+      "unit_lowest_price": 24000,
+      "unit_highest_price": 26123
+    },
+    {
+      "create_time": "2017年11月27日",
+      "person_lowest_price": 30700,
+      "person_highest_price": 34046,
+      "unit_lowest_price": 16800,
+      "unit_highest_price": 18982
+    },
+    {
+      "create_time": "2017年10月25日",
+      "person_lowest_price": 30000,
+      "person_highest_price": 32449,
+      "unit_lowest_price": 13800,
+      "unit_highest_price": 18038
+    },
+    {
+      "create_time": "2017年9月25日",
+      "person_lowest_price": 28800,
+      "person_highest_price": 30535,
+      "unit_lowest_price": 11800,
+      "unit_highest_price": 15659
+    },
+    {
+      "create_time": "2017年8月25日",
+      "person_lowest_price": 26800,
+      "person_highest_price": 28561,
+      "unit_lowest_price": 10800,
+      "unit_highest_price": 11663
+    },
+    {
+      "create_time": "2017年7月25日",
+      "person_lowest_price": 25000,
+      "person_highest_price": 26668,
+      "unit_lowest_price": 10100,
+      "unit_highest_price": 11170
+    },
+    {
+      "create_time": "2017年6月26日",
+      "person_lowest_price": 23900,
+      "person_highest_price": 25498,
+      "unit_lowest_price": 10000,
+      "unit_highest_price": 11136
+    },
+    {
+      "create_time": "2017年5月25日",
+      "person_lowest_price": 21500,
+      "person_highest_price": 22996,
+      "unit_lowest_price": 10000,
+      "unit_highest_price": 11063
+    },
+    {
+      "create_time": "2017年4月25日",
+      "person_lowest_price": 18900,
+      "person_highest_price": 20127,
+      "unit_lowest_price": 10000,
+      "unit_highest_price": 11061
+    },
+    {
+      "create_time": "2017年3月27日",
+      "person_lowest_price": 17300,
+      "person_highest_price": 18358,
+      "unit_lowest_price": 10000,
+      "unit_highest_price": 10945
+    },
+    {
+      "create_time": "2017年2月28日",
+      "person_lowest_price": 15900,
+      "person_highest_price": 17419,
+      "unit_lowest_price": 10000,
+      "unit_highest_price": 11114
+    },
+    {
+      "create_time": "2017年1月25日",
+      "person_lowest_price": 15100,
+      "person_highest_price": 17508,
+      "unit_lowest_price": 10000,
+      "unit_highest_price": 11093
+    },
+    {
+      "create_time": "2016年12月26日",
+      "person_lowest_price": 15300,
+      "person_highest_price": 20591,
+      "unit_lowest_price": 10000,
+      "unit_highest_price": 10905
+    },
+    {
+      "create_time": "2016年11月25日",
+      "person_lowest_price": 18600,
+      "person_highest_price": 22300,
+      "unit_lowest_price": 10000,
+      "unit_highest_price": 11427
+    },
+    {
+      "create_time": "2016年10月25日",
+      "person_lowest_price": 19500,
+      "person_highest_price": 21551,
+      "unit_lowest_price": 10000,
+      "unit_highest_price": 11269
+    },
+    {
+      "create_time": "2016年9月26日",
+      "person_lowest_price": 18100,
+      "person_highest_price": 19614,
+      "unit_lowest_price": 10000,
+      "unit_highest_price": 11277
+    },
+    {
+      "create_time": "2016年8月25日",
+      "person_lowest_price": 15100,
+      "person_highest_price": 17330,
+      "unit_lowest_price": 10000,
+      "unit_highest_price": 11114
+    },
+    {
+      "create_time": "2016年7月25日",
+      "person_lowest_price": 10100,
+      "person_highest_price": 24324,
+      "unit_lowest_price": 10000,
+      "unit_highest_price": 11355
+    },
+    {
+      "create_time": "2016年6月27日",
+      "person_lowest_price": 23400,
+      "person_highest_price": 28541,
+      "unit_lowest_price": 10000,
+      "unit_highest_price": 11420
+    },
+    {
+      "create_time": "2016年5月25日",
+      "person_lowest_price": 25000,
+      "person_highest_price": 27127,
+      "unit_lowest_price": 10000,
+      "unit_highest_price": 11186
+    },
+    {
+      "create_time": "2016年4月25日",
+      "person_lowest_price": 23800,
+      "person_highest_price": 25701,
+      "unit_lowest_price": 10000,
+      "unit_highest_price": 11496
+    },
+    {
+      "create_time": "2016年3月25日",
+      "person_lowest_price": 21100,
+      "person_highest_price": 23315,
+      "unit_lowest_price": 10000,
+      "unit_highest_price": 11513
+    },
+    {
+      "create_time": "2016年2月25日",
+      "person_lowest_price": 19500,
+      "person_highest_price": 21884,
+      "unit_lowest_price": 10000,
+      "unit_highest_price": 11560
+    },
+    {
+      "create_time": "2016年1月25日",
+      "person_lowest_price": 21000,
+      "person_highest_price": 25727,
+      "unit_lowest_price": 10000,
+      "unit_highest_price": 12106
+    },
+    {
+      "create_time": "2015年12月25日",
+      "person_lowest_price": 24600,
+      "person_highest_price": 27077,
+      "unit_lowest_price": 10000,
+      "unit_highest_price": 12009
+    },
+    {
+      "create_time": "2015年11月25日",
+      "person_lowest_price": 19000,
+      "person_highest_price": 20609,
+      "unit_lowest_price": 10000,
+      "unit_highest_price": 11811
+    },
+    {
+      "create_time": "2015年10月26日",
+      "person_lowest_price": 16000,
+      "person_highest_price": 17487,
+      "unit_lowest_price": 10000,
+      "unit_highest_price": 11254
+    },
+    {
+      "create_time": "2015年9月25日",
+      "person_lowest_price": 13500,
+      "person_highest_price": 16886,
+      "unit_lowest_price": 10000,
+      "unit_highest_price": 11590
+    },
+    {
+      "create_time": "2015年8月25日",
+      "person_lowest_price": 10000,
+      "person_highest_price": 36231,
+      "unit_lowest_price": 10000,
+      "unit_highest_price": 11878
+    },
+    {
+      "create_time": "2015年7月27日",
+      "person_lowest_price": 35000,
+      "person_highest_price": 37805,
+      "unit_lowest_price": 10000,
+      "unit_highest_price": 12152
+    },
+    {
+      "create_time": "2015年6月25日",
+      "person_lowest_price": 26000,
+      "person_highest_price": 27672,
+      "unit_lowest_price": 10000,
+      "unit_highest_price": 11822
+    },
+    {
+      "create_time": "2015年5月25日",
+      "person_lowest_price": 20200,
+      "person_highest_price": 21506,
+      "unit_lowest_price": 10000,
+      "unit_highest_price": 11604
+    },
+    {
+      "create_time": "2015年4月27日",
+      "person_lowest_price": 16800,
+      "person_highest_price": 17798,
+      "unit_lowest_price": 10000,
+      "unit_highest_price": 11593
+    },
+    {
+      "create_time": "2015年3月25日",
+      "person_lowest_price": 14500,
+      "person_highest_price": 15436,
+      "unit_lowest_price": 10000,
+      "unit_highest_price": 11883
+    },
+    {
+      "create_time": "2015年2月25日",
+      "person_lowest_price": 13200,
+      "person_highest_price": 14331,
+      "unit_lowest_price": 10000,
+      "unit_highest_price": 12391
+    },
+    {
+      "create_time": "2015年1月25日",
+      "person_lowest_price": 12000,
+      "person_highest_price": 13137,
+      "unit_lowest_price": 10000,
+      "unit_highest_price": 11882
+    },
+    {
+      "create_time": "2014年12月25日",
+      "person_lowest_price": 10300,
+      "person_highest_price": 11421,
+      "unit_lowest_price": 10000,
+      "unit_highest_price": 11604
+    },
+    {
+      "create_time": "2014年11月25日",
+      "person_lowest_price": 10000,
+      "person_highest_price": 11207,
+      "unit_lowest_price": 10000,
+      "unit_highest_price": 11614
+    },
+    {
+      "create_time": "2014年10月25日",
+      "person_lowest_price": 10000,
+      "person_highest_price": 11442,
+      "unit_lowest_price": 10000,
+      "unit_highest_price": 11836
+    },
+    {
+      "create_time": "2014年9月25日",
+      "person_lowest_price": 10000,
+      "person_highest_price": 12382,
+      "unit_lowest_price": 10000,
+      "unit_highest_price": 11997
+    },
+    {
+      "create_time": "2014年8月26日",
+      "person_lowest_price": 10000,
+      "person_highest_price": 16654,
+      "unit_lowest_price": 10000,
+      "unit_highest_price": 12375
+    },
+    {
+      "create_time": "2014年7月25日",
+      "person_lowest_price": 14800,
+      "person_highest_price": 18310,
+      "unit_lowest_price": 10000,
+      "unit_highest_price": 12845
+    },
+    {
+      "create_time": "2014年6月26日",
+      "person_lowest_price": 16000,
+      "person_highest_price": 17024,
+      "unit_lowest_price": 10000,
+      "unit_highest_price": 13134
+    },
+    {
+      "create_time": "2014年5月27日",
+      "person_lowest_price": 14500,
+      "person_highest_price": 15391,
+      "unit_lowest_price": 11000,
+      "unit_highest_price": 12902
+    },
+    {
+      "create_time": "2014年4月26日",
+      "person_lowest_price": 13100,
+      "person_highest_price": 14074,
+      "unit_lowest_price": 10800,
+      "unit_highest_price": 12452
+    },
+    {
+      "create_time": "2014年3月27日",
+      "person_lowest_price": 12300,
+      "person_highest_price": 13085,
+      "unit_lowest_price": 10300,
+      "unit_highest_price": 12203
+    },
+    {
+      "create_time": "2014年2月25日",
+      "person_lowest_price": 11600,
+      "person_highest_price": 12777,
+      "unit_lowest_price": 10000,
+      "unit_highest_price": 12494
+    },
+    {
+      "create_time": "2014年1月26日",
+      "person_lowest_price": 11500,
+      "person_highest_price": 12541,
+      "unit_lowest_price": 10000,
+      "unit_highest_price": 12601
+    },
+    {
+      "create_time": "2013年12月25日",
+      "person_lowest_price": 10700,
+      "person_highest_price": 11959,
+      "unit_lowest_price": 10000,
+      "unit_highest_price": 12958
+    },
+    {
+      "create_time": "2013年11月25日",
+      "person_lowest_price": 10000,
+      "person_highest_price": 11813,
+      "unit_lowest_price": 10000,
+      "unit_highest_price": 14304
+    },
+    {
+      "create_time": "2013年10月25日",
+      "person_lowest_price": 10000,
+      "person_highest_price": 16384,
+      "unit_lowest_price": 10000,
+      "unit_highest_price": 19510
+    },
+    {
+      "create_time": "2013年09月25日",
+      "person_lowest_price": 10000,
+      "person_highest_price": 30802,
+      "unit_lowest_price": 18000,
+      "unit_highest_price": 20643
+    },
+    {
+      "create_time": "2013年08月26日",
+      "person_lowest_price": 23900,
+      "person_highest_price": 26599,
+      "unit_lowest_price": 15100,
+      "unit_highest_price": 17385
+    },
+    {
+      "create_time": "2013年07月25日",
+      "person_lowest_price": 18700,
+      "person_highest_price": 20631,
+      "unit_lowest_price": 12500,
+      "unit_highest_price": 14789
+    },
+    {
+      "create_time": "2013年06月25日",
+      "person_lowest_price": 14000,
+      "person_highest_price": 15743,
+      "unit_lowest_price": 10000,
+      "unit_highest_price": 13117
+    },
+    {
+      "create_time": "2013年05月27日",
+      "person_lowest_price": 11600,
+      "person_highest_price": 12627,
+      "unit_lowest_price": 10000,
+      "unit_highest_price": 12548
+    },
+    {
+      "create_time": "2013年04月25日",
+      "person_lowest_price": 10000,
+      "person_highest_price": 10998,
+      "unit_lowest_price": 10000,
+      "unit_highest_price": 12017
+    },
+    {
+      "create_time": "2013年03月25日",
+      "person_lowest_price": 10000,
+      "person_highest_price": 10585,
+      "unit_lowest_price": 10000,
+      "unit_highest_price": 11688
+    },
+    {
+      "create_time": "2013年02月25日",
+      "person_lowest_price": 10000,
+      "person_highest_price": 10573,
+      "unit_lowest_price": 10000,
+      "unit_highest_price": 11762
+    },
+    {
+      "create_time": "2013年01月25日",
+      "person_lowest_price": 10000,
+      "person_highest_price": 10854,
+      "unit_lowest_price": 10000,
+      "unit_highest_price": 12583
+    },
+    {
+      "create_time": "2012年12月25日",
+      "person_lowest_price": 10000,
+      "person_highest_price": 10955,
+      "unit_lowest_price": 10000,
+      "unit_highest_price": 12303
+    },
+    {
+      "create_time": "2012年11月26日",
+      "person_lowest_price": 10000,
+      "person_highest_price": 10779,
+      "unit_lowest_price": 10000,
+      "unit_highest_price": 12575
+    },
+    {
+      "create_time": "2012年10月25日",
+      "person_lowest_price": 10000,
+      "person_highest_price": 11067,
+      "unit_lowest_price": 10000,
+      "unit_highest_price": 12674
+    },
+    {
+      "create_time": "2012年09月25日",
+      "person_lowest_price": 10000,
+      "person_highest_price": 14138,
+      "unit_lowest_price": 10000,
+      "unit_highest_price": 15978
+    },
+    {
+      "create_time": "2012年08月28日",
+      "person_lowest_price": 10000,
+      "person_highest_price": 22822,
+      "unit_lowest_price": 10000,
+      "unit_highest_price": 25515
+    }
+  ]
+}

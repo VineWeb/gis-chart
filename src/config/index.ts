@@ -8,7 +8,8 @@ export const {
     getColumns,
     getDataSource,
     getGuangdongSource,
-    getQingyuanSource
+    getQingyuanSource,
+    getGuangzhouYuea
 } = httpAxios
 import stamen from '@/assets/config/stamen.png';
 import tdtLight from '@/assets/config/tdtLight.png';
