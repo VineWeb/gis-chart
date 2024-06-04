@@ -23,6 +23,8 @@
     "antd": "^5.17.2",
     "axios": "^1.6.8",
     "dayjs": "^1.11.11",
+    "echarts": "^5.5.0",
+    "echarts-for-react": "^3.0.2",
     "loadsh": "^0.0.4",
     "lodash": "^4.17.21",
     "mapbox-gl": "1.13.0",

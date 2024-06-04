@@ -99,7 +99,7 @@ function Tourism () {
   }
   return (
     <>
-      <Flex style={{'padding': "20px 0", 'backgroundColor': '#fee4d3'}} justify='center'>
+      <Flex style={{'padding': "20px", 'backgroundColor': '#fee4d3'}} justify='left'>
         <Form
         form={form}
         layout={'inline'}

@@ -11,13 +11,16 @@ const statisticsList = ['旅游', '广州政策','人口', '考生考试']
 const subList = [
   [
     { key: `11`, label: '国家AAAAA旅游景区', path: '/'} , 
-    { key: `12`, label: '广东旅游年卡A卡', path: '/gd'}],
+    { key: `12`, label: '广东旅游年卡A卡', path: '/gd'},
+    { key: `13`, label: '国家AAAAA旅游景区查询', path: '/tourism'}
+  ],
   [
     { key: `21`, label: '新闻', path: '/guangzhou/news'} ,
     { key: `22`, label: '广州车牌竞价汇总', path: '/guangzhou/yuea'}
   ],
-  [],
-  [],
+  [
+    { key: `31`, label: '图表实例', path: '/population'} ,
+  ],
 ]
 const keysList = subList.flat()
 const items2: MenuProps['items'] = [UserOutlined, LaptopOutlined, NotificationOutlined].map(
