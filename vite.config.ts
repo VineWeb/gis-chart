@@ -4,7 +4,9 @@ import ViteBabel from 'vite-plugin-babel';
 import path from 'path';
 export default defineConfig(({ mode }) => {
   const env = loadEnv(mode, process.cwd(), '')
+  // console.log(env, 'env')
   return {
+    base: env.VITE_BASE_URL,
     plugins: [
       react(),
       ViteBabel()
@@ -31,6 +33,9 @@ export default defineConfig(({ mode }) => {
           rewrite: (path: string) => path.replace(/^\/todoapi/, '')
         }
       }
+    },
+    build: {
+      outDir: env.OUT_DIR
     }
   }
 })

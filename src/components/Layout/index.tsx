@@ -102,8 +102,8 @@ const App: React.FC = () => {
 
   return (
     <Layout className='layout'>
-      <Header className="site-header" style={{ padding: 0 }}>
-        {isMobile && menu}
+      {isMobile && <Header className="site-header" style={{ padding: 0 }}>
+        {menu}
         <Button
           className='site-btn'
           type="primary"
@@ -111,13 +111,13 @@ const App: React.FC = () => {
           icon={<MenuUnfoldOutlined />}
           style={{ marginLeft: '16px', display: 'inline-block' }}
         />
-      </Header>
+      </Header>}
       <Layout>
       <Row style={{width: "100%", height: '100%'}}>
-         <Col xs={0} md={6} lg={6} xl={4} xxl={4}>
+          <Col xs={0} md={6} lg={6} xl={4} xxl={4}>
             <div className="logo" />
             {menu}
-        </Col>
+          </Col>
         <Col xs={24} md={18} lg={18} xl={20} xxl={20}>
           <Content
             style={{

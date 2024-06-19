@@ -15,7 +15,7 @@ import stamen from '@/assets/config/stamen.png';
 import tdtLight from '@/assets/config/tdtLight.png';
 import tdtSatellite from '@/assets/config/tdtSatellite.png';
 import ter_c from '@/assets/config/ter_c.png';
-const TIANDITU_URL = 'http://t0.tianditu.gov.cn'
+const TIANDITU_URL = '//t0.tianditu.gov.cn'
 const tdtKey = '4989e906aa138e5bb1b49a3eb83a6128';
 export const MAP_OPTIONS  = [
     {
