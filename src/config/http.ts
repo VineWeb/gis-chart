@@ -34,3 +34,10 @@ export const getQingyuanSource = () => {
 export const getGuangzhouYuea = () => {
   return axios.get(`${baseURL}/json/yuea.json`).then(data => data.data);
 };
+export const getWuliScore2024 = () => {
+  return axios.get(`${baseURL}/json/2024wuli.json`).then(data => data.data);
+};
+export const getLishiScore2024 = () => {
+  return axios.get(`${baseURL}/json/2024lishi.json`).then(data => data.data);
+};
+

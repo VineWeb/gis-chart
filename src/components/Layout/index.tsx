@@ -1,6 +1,6 @@
 import './index.scss'
 import React, { useEffect, useState } from 'react';
-import { LaptopOutlined, NotificationOutlined, UserOutlined } from '@ant-design/icons';
+import { LaptopOutlined, NotificationOutlined, UserOutlined, SunFilled } from '@ant-design/icons';
 import type { MenuProps } from 'antd';
 import { Layout, Menu, theme, Button, Row, Col } from 'antd';
 import { MenuUnfoldOutlined, MenuFoldOutlined } from '@ant-design/icons';
@@ -21,9 +21,12 @@ const subList = [
   [
     { key: `31`, label: '图表实例', path: '/population'} ,
   ],
+  [
+    { key: `41`, label: '高考分数位次', path: '/scores'} ,
+  ],
 ]
 const keysList = subList.flat()
-const items2: MenuProps['items'] = [UserOutlined, LaptopOutlined, NotificationOutlined].map(
+const items2: MenuProps['items'] = [UserOutlined, LaptopOutlined, NotificationOutlined, SunFilled].map(
   (icon, index) => {
     const key = String(index + 1);
     return {

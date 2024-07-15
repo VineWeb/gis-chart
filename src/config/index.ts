@@ -9,7 +9,9 @@ export const {
     getDataSource,
     getGuangdongSource,
     getQingyuanSource,
-    getGuangzhouYuea
+    getGuangzhouYuea,
+    getWuliScore2024,
+    getLishiScore2024
 } = httpAxios
 import stamen from '@/assets/config/stamen.png';
 import tdtLight from '@/assets/config/tdtLight.png';
